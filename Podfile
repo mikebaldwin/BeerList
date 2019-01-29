@@ -6,11 +6,11 @@ target 'BeerList' do
   use_frameworks!
 
   # Pods for BeerList
+  pod 'Alamofire', '~> 4.7'
+  pod 'Nuke', '~> 7.0'
 
   target 'BeerListTests' do
     inherit! :search_paths
-    pod 'Alamofire', '~> 4.7'
-    pod 'Nuke', '~> 7.0'
   end
 
 end
