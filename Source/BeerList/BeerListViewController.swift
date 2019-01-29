@@ -66,4 +66,9 @@ extension BeerListViewController {
 
 extension BeerListViewController {
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let beer = beers[indexPath.row]
+        let detailViewController = BeerDetailViewController(with: beer)
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
 }
