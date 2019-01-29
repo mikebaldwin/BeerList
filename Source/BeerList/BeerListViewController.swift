@@ -6,6 +6,7 @@
 //  Copyright © 2019 mikebaldwin.co. All rights reserved.
 //
 
+import SDWebImage
 import UIKit
 
 // MARK: - Named Constants
@@ -20,7 +21,7 @@ private extension String {
 // MARK: - Class definition
 
 class BeerListViewController: UITableViewController {
-
+    
     let punkApi = PunkApi()
     var beers: [Beer] = []
     
@@ -39,7 +40,7 @@ class BeerListViewController: UITableViewController {
             }
         )
     }
-
+    
 }
 
 // MARK: - Table view data source
@@ -56,6 +57,10 @@ extension BeerListViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: .cellId, for: indexPath)
         let beer = beers[indexPath.row]
+        cell.imageView?.sd_setImage(
+            with: URL(string: beer.imageUrl),
+            placeholderImage: UIImage(named: "placeholder")
+        )
         cell.textLabel?.text = beer.name
         return cell
     }

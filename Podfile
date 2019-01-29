@@ -7,7 +7,7 @@ target 'BeerList' do
 
   # Pods for BeerList
   pod 'Alamofire', '~> 4.7'
-  pod 'Nuke', '~> 7.0'
+  pod 'SDWebImage', '~> 4.0'
 
   target 'BeerListTests' do
     inherit! :search_paths
