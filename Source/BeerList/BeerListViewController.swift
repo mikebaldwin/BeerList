@@ -54,14 +54,18 @@ extension BeerListViewController {
         return beers.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> BeerListCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: .cellId, for: indexPath) as! BeerListCell
+    private func configure(_ cell: BeerListCell, at indexPath: IndexPath) {
         let beer = beers[indexPath.row]
         cell.beerImageView.sd_setImage(
             with: URL(string: beer.imageUrl),
             placeholderImage: UIImage(named: "placeholder")
         )
         cell.nameLabel.text = beer.name
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> BeerListCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: .cellId, for: indexPath) as! BeerListCell
+        configure(cell, at: indexPath)
         return cell
     }
 
