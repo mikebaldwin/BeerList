@@ -13,9 +13,7 @@ struct PunkApi {
     
     func getBeerList(success: @escaping ([Beer]) -> Void,
                      failure: @escaping (Error) -> Void) {
-        let endpoint = "https://api.punkapi.com/v2/beers"
-        Alamofire
-            .request(endpoint)
+        Alamofire.request(PunkApiRouter.getBeerList)
             .validate()
             .responseData(completionHandler: { response in
                 do {

@@ -19,6 +19,7 @@
 		9E02820721FFE98B003FA730 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02820621FFE98B003FA730 /* BeerDetailViewController.swift */; };
 		9E167BBE22023F3F00AB1C39 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E167BBC22023F3F00AB1C39 /* BeerListCell.swift */; };
 		9E167BBF22023F3F00AB1C39 /* BeerListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E167BBD22023F3F00AB1C39 /* BeerListCell.xib */; };
+		9E167BC1220242B100AB1C39 /* PunkApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E167BC0220242B100AB1C39 /* PunkApiRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9E02820621FFE98B003FA730 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		9E167BBC22023F3F00AB1C39 /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
 		9E167BBD22023F3F00AB1C39 /* BeerListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerListCell.xib; sourceTree = "<group>"; };
+		9E167BC0220242B100AB1C39 /* PunkApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				9E02820021FFE90A003FA730 /* PunkApi.swift */,
+				9E167BC0220242B100AB1C39 /* PunkApiRouter.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				9E02820521FFE965003FA730 /* BeerListViewController.swift in Sources */,
 				9E02820121FFE90A003FA730 /* PunkApi.swift in Sources */,
 				9E02820321FFE921003FA730 /* Beer.swift in Sources */,
+				9E167BC1220242B100AB1C39 /* PunkApiRouter.swift in Sources */,
 				9E0281DE21FFE604003FA730 /* AppDelegate.swift in Sources */,
 				9E167BBE22023F3F00AB1C39 /* BeerListCell.swift in Sources */,
 			);
