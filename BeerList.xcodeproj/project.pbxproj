@@ -20,6 +20,7 @@
 		9E167BBE22023F3F00AB1C39 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E167BBC22023F3F00AB1C39 /* BeerListCell.swift */; };
 		9E167BBF22023F3F00AB1C39 /* BeerListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E167BBD22023F3F00AB1C39 /* BeerListCell.xib */; };
 		9E167BC1220242B100AB1C39 /* PunkApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E167BC0220242B100AB1C39 /* PunkApiRouter.swift */; };
+		9E167BC52202479500AB1C39 /* BeerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E167BC32202479500AB1C39 /* BeerDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		9E167BBC22023F3F00AB1C39 /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
 		9E167BBD22023F3F00AB1C39 /* BeerListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerListCell.xib; sourceTree = "<group>"; };
 		9E167BC0220242B100AB1C39 /* PunkApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiRouter.swift; sourceTree = "<group>"; };
+		9E167BC32202479500AB1C39 /* BeerDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				9E02820221FFE921003FA730 /* Beer.swift */,
 				9E02820621FFE98B003FA730 /* BeerDetailViewController.swift */,
+				9E167BC32202479500AB1C39 /* BeerDetailViewController.xib */,
 				9E167BBC22023F3F00AB1C39 /* BeerListCell.swift */,
 				9E167BBD22023F3F00AB1C39 /* BeerListCell.xib */,
 				9E02820421FFE965003FA730 /* BeerListViewController.swift */,
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0281E821FFE605003FA730 /* LaunchScreen.storyboard in Resources */,
+				9E167BC52202479500AB1C39 /* BeerDetailViewController.xib in Resources */,
 				9E167BBF22023F3F00AB1C39 /* BeerListCell.xib in Resources */,
 				9E0281E521FFE605003FA730 /* Assets.xcassets in Resources */,
 			);
