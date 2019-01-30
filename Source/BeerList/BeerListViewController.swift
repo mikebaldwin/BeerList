@@ -64,7 +64,9 @@ extension BeerListViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> BeerListCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: .cellId, for: indexPath) as! BeerListCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: .cellId, for: indexPath) as? BeerListCell else {
+            fatalError("Failed to dequeue cell as BeerListCell. Almost definitely programmer error.")
+        }
         configure(cell, at: indexPath)
         return cell
     }
