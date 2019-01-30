@@ -28,7 +28,7 @@ class BeerListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Beers"
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: .cellId)
+        tableView.register(UINib(nibName: "BeerListCell", bundle: Bundle.main), forCellReuseIdentifier: .cellId)
         
         punkApi.getBeerList(
             success: { [weak self] beers in
@@ -54,14 +54,14 @@ extension BeerListViewController {
         return beers.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: .cellId, for: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> BeerListCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: .cellId, for: indexPath) as! BeerListCell
         let beer = beers[indexPath.row]
-        cell.imageView?.sd_setImage(
+        cell.beerImageView.sd_setImage(
             with: URL(string: beer.imageUrl),
             placeholderImage: UIImage(named: "placeholder")
         )
-        cell.textLabel?.text = beer.name
+        cell.nameLabel.text = beer.name
         return cell
     }
 
